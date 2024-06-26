@@ -28,7 +28,7 @@ async def predict(
     confidence = np.max(predictions[0])
     return {
         'class': predicted_class,
-        'confidence': float(confidence)
+        'confidence': float(confidence*100)
     }
 
 # if __name__ == "__main__":
